@@ -1,6 +1,9 @@
 # mailSenderPW
 
 Projekt ten składa się z dwóch aplikacji. Pierwsza z nich odpowiada za frontend, a druga za backend aplikacji i łączą się w całość.
+
+### Link do testowego filmu na YouTube
+
 ### BACKEND 
 ###### Komponenty: 
 Aplikacja wdrożona została przy użyciu Azure App Service. Komunikuje się ona z bazą danych Azure Database for PostgreSQL server. Aplikacja uruchomiona jest z wykorzystaniem Container Registry, który aktualizuje ją automatycznie przy każdym odświeżeniu kontenera. Dzięki Github Actions tworzony jest Docker image, który wysyła do Container Registry po wprowadzeniu zmian na branch’u main na repozytorium znajdującym się na GitHubie. 
