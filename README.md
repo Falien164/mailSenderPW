@@ -2,7 +2,16 @@
 
 Projekt ten składa się z dwóch aplikacji. Pierwsza z nich odpowiada za frontend, a druga za backend aplikacji i łączą się w całość.
 
+# TODO:
+   - screeny z azure
+   - screeny z apki
+   - screen jakiś z swaggera
+
 ### Link do testowego filmu na YouTube
+
+### Link do aplikacji
+
+### link do swaggera
 
 ### BACKEND 
 ###### Komponenty: 
