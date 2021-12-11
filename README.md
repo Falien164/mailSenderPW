@@ -6,6 +6,7 @@ Projekt ten składa się z dwóch aplikacji. Pierwsza z nich odpowiada za fronte
    - screeny z azure
    - screeny z apki
    - screen jakiś z swaggera
+   - Jakieś opisy w sekcjach i pod zdjęciami
 
 ### Link do testowego filmu na YouTube
 
