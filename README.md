@@ -25,8 +25,7 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
   - axios do uproszczenia komunikacji z backendem.
   - 
 ### Diagram przypadków użycia
-<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/diagram_przypadkow.png" width="100" height="100">
-![](./images/diagram_przypadkow.png&s=200|width=100px)
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/diagram_przypadkow.png" width="400" height="400">
 
 ### Architektura aplikacji
-![plot](./images/architektura.png){:height="200px" width="200px"}
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/architektura.png" width="400" height="400">
