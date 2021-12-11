@@ -24,4 +24,8 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
   - dockerfile do tworzenia obrazu.
   - axios do uproszczenia komunikacji z backendem.
 
+### Diagram przypadków użycia
 ![plot](./images/diagram_przypadkow.png)
+
+### Architektura aplikacji
+![plot](./images/architektura.png)
