@@ -24,5 +24,4 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
   - dockerfile do tworzenia obrazu.
   - axios do uproszczenia komunikacji z backendem.
 
-
-![alt text](https://github.com/Falien164/mailSenderPW/blob/master/images/diagram_przypadkow.png?raw=true)
+![plot](./images/diagram_przypadkow.png)
