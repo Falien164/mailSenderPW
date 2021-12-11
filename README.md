@@ -17,14 +17,15 @@ Aplikacja została stworzona przy użyciu framework’u Rails opierającym się 
 ###### Komponenty: 
 Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i updatowana automatycznie po każdym update konteneru. Dzięki GitHub actions robiony jest docker image i wysyłany do Container Registry przy każdej aktualizacji na main branch na githubie (push, merge, ...).
 ###### Implementacja:
-  - vue3 + vue router jako główny framework. 
-  - quasar jako biblioteka stylistyczna.
-  - Typescript, Eslint, prettier do eleganckiego pisania kodu. Jest do testowania. 
-  - Sass jako loader do scss, jako preprocesor CSS, do współpracy z quasarem i z możliwością użycia do uproszczenia stylowania. 
-  - dockerfile do tworzenia obrazu.
+  - vue3 + vue router jako główny framework, 
+  - quasar jako biblioteka stylistyczna,
+  - Typescript, Eslint, prettier do eleganckiego pisania kodu,
+  - Sass jako loader do scss, jako preprocesor CSS, do współpracy z quasarem i z możliwością użycia do uproszczenia stylowania,
+  - dockerfile do tworzenia obrazu,
   - axios do uproszczenia komunikacji z backendem.
-
+  - 
 ### Diagram przypadków użycia
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/diagram_przypadkow.png" width="100" height="100">
 ![](./images/diagram_przypadkow.png&s=200|width=100px)
 
 ### Architektura aplikacji
