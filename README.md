@@ -25,7 +25,7 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
   - axios do uproszczenia komunikacji z backendem.
 
 ### Diagram przypadków użycia
-![plot](./images/diagram_przypadkow.png =250x250)
+![plot](./images/diagram_przypadkow.png){:height="700px" width="400px"}
 
 ### Architektura aplikacji
-![plot](./images/architektura.png =250x250)
+![plot](./images/architektura.png)
