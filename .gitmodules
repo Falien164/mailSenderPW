@@ -1,0 +1,3 @@
+[submodule "cloud-services-frontend"]
+	path = cloud-services-frontend
+	url = https://github.com/BartoszSadowski/cloud-services-frontend
