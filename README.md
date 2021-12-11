@@ -25,4 +25,4 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
   - axios do uproszczenia komunikacji z backendem.
 
 
-![alt text](https://github.com/Falien164/mailSenderPW/blob/master/test.jpg?raw=true)
+![alt text](https://github.com/Falien164/mailSenderPW/blob/master/images/diagram_przypadkow.png?raw=true)
