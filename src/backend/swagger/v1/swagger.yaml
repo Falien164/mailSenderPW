@@ -1,0 +1,349 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/email_campaigns":
+    get:
+      summary: list email_campaigns
+      tags:
+      - Email Campaigns
+      security:
+      - Bearer: []
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create email_campaign
+      tags:
+      - Email Campaigns
+      security:
+      - Bearer: []
+      parameters: []
+      responses:
+        '201':
+          description: created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email_campaign:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                      example: Welcome campaign
+                    description:
+                      type: string
+                      example: Campaiagn to welcome customers
+                    subject:
+                      type: string
+                      example: Welcome
+                    body:
+                      type: string
+                      example: Hello {{var:name}}, {{var:surname}}. We would like
+                        to welcome you!
+                  required:
+                  - title
+                  - description
+                  - subject
+                  - body
+        required: true
+  "/email_campaigns/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show email_campaign
+      tags:
+      - Email Campaigns
+      security:
+      - Bearer: []
+      responses:
+        '200':
+          description: successful fetch
+    patch:
+      summary: update email_campaign
+      tags:
+      - Email Campaigns
+      security:
+      - Bearer: []
+      parameters: []
+      responses:
+        '200':
+          description: successful update
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email_campaign:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                      example: New title
+                    description:
+                      type: string
+                      example: New description
+                    subject:
+                      type: string
+                      example: New subject
+                    body:
+                      type: string
+                      example: New body
+                  required: []
+        required: true
+    put:
+      summary: update email_campaign
+      tags:
+      - Email Campaigns
+      security:
+      - Bearer: []
+      parameters: []
+      responses:
+        '200':
+          description: successfuly update
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email_campaign:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                      example: New title
+                    description:
+                      type: string
+                      example: New description
+                    subject:
+                      type: string
+                      example: New subject
+                    body:
+                      type: string
+                      example: New body
+                  required: []
+        required: true
+    delete:
+      summary: delete email_campaign
+      tags:
+      - Email Campaigns
+      security:
+      - Bearer: []
+      responses:
+        '204':
+          description: successfuly deleted
+  "/email_campaigns/{id}/mails":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: mails email_campaign
+      tags:
+      - Mails
+      security:
+      - Bearer: []
+      responses:
+        '200':
+          description: successful
+  "/email_campaigns/{id}/clients":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: clients email_campaign
+      tags:
+      - Clients
+      security:
+      - Bearer: []
+      responses:
+        '200':
+          description: successful
+  "/email_campaigns/{id}/add_client":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    post:
+      summary: add_client email_campaign
+      tags:
+      - Clients
+      security:
+      - Bearer: []
+      parameters: []
+      responses:
+        '201':
+          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      example: mateusz@example.com
+                    name:
+                      type: string
+                      example: Mateusz
+                    surname:
+                      type: string
+                      example: Jawor
+                  required:
+                  - email
+                  - name
+                  - surname
+        required: true
+  "/email_campaigns/{id}/delete_client":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    delete:
+      summary: delete_client email_campaign
+      tags:
+      - Clients
+      security:
+      - Bearer: []
+      parameters: []
+      responses:
+        '204':
+          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      example: 1c9fd481-d284-44c0-9534-b7443187eb82
+                  required:
+                  - id
+        required: true
+  "/email_campaigns/{id}/send_mails":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    post:
+      summary: send_mails email_campaign
+      tags:
+      - Mails
+      security:
+      - Bearer: []
+      responses:
+        '200':
+          description: successful
+  "/sign_up":
+    post:
+      summary: sign up user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '201':
+          description: created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                      example: Jan Kowalski
+                    email:
+                      type: string
+                      example: jan@gmail.com
+                    password:
+                      type: string
+                      example: '123456'
+                    password_confirmation:
+                      type: string
+                      example: '123456'
+                  required:
+                  - email
+                  - password
+                  - password_confirmation
+        required: true
+  "/sign_in":
+    post:
+      summary: sign in user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '200':
+          description: created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      example: jan@gmail.com
+                    password:
+                      type: string
+                      example: '123456'
+                  required:
+                  - email
+                  - password
+        required: true
+components:
+  securitySchemes:
+    Bearer:
+      description: JWT key necessary to use API calls
+      type: apiKey
+      name: authorization
+      in: header
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: cloud-service-backend.azurewebsites.net
+- url: http://localhost:3000

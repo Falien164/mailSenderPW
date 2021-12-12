@@ -1,0 +1,1216 @@
+current directory: /Users/adamnewlaptop/Desktop/rubyrails-tasks/vendor/bundle/ruby/2.6.0/gems/therubyracer-0.12.3/ext/v8
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/bin/ruby -I /Users/adamnewlaptop/.rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211107-99626-1qb4x87.rb extconf.rb --with-v8-dir\=/usr/local/opt/v8@3.15
+checking for -lpthread... yes
+checking for -lobjc... yes
+checking for v8.h... yes
+checking for -lv8... yes
+creating Makefile
+
+current directory: /Users/adamnewlaptop/Desktop/rubyrails-tasks/vendor/bundle/ruby/2.6.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" clean
+
+current directory: /Users/adamnewlaptop/Desktop/rubyrails-tasks/vendor/bundle/ruby/2.6.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR="
+compiling accessor.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from accessor.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+accessor.cc:130:43: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:130:43: note: '{' token is here
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:130:43: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:130:43: note: ')' token is here
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:135:43: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, (VALUE)String(property), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:135:43: note: '{' token is here
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, (VALUE)String(property), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:135:43: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, (VALUE)String(property), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:135:43: note: ')' token is here
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, (VALUE)String(property), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:140:64: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:140:64: note: '{' token is here
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:140:64: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:140:64: note: ')' token is here
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:145:63: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:145:63: note: '{' token is here
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:145:63: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:145:63: note: ')' token is here
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:150:50: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:150:50: note: '{' token is here
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:150:50: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:150:50: note: ')' token is here
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:155:43: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:155:43: note: '{' token is here
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:155:43: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:155:43: note: ')' token is here
+    return Value(rb_funcall(accessor.get, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:160:43: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, UINT2NUM(index), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:160:43: note: '{' token is here
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, UINT2NUM(index), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:160:43: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, UINT2NUM(index), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:160:43: note: ')' token is here
+    return Value(rb_funcall(accessor.set, rb_intern("call"), 3, UINT2NUM(index), (VALUE)Value(value), (VALUE)*this));
+                                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:165:64: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:165:64: note: '{' token is here
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:165:64: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:165:64: note: ')' token is here
+    return v8::Integer::New(NUM2INT(rb_funcall(accessor.query, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                               ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:714:32: note: expanded from macro 'NUM2INT'
+#define NUM2INT(x)  RB_NUM2INT(x)
+                               ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:702:41: note: expanded from macro 'RB_NUM2INT'
+#define RB_NUM2INT(x) rb_num2int_inline(x)
+                                        ^
+accessor.cc:170:63: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:170:63: note: '{' token is here
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:170:63: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:170:63: note: ')' token is here
+    return v8::Boolean::New(Bool(rb_funcall(accessor.deleter, rb_intern("call"), 2, UINT2NUM(index), (VALUE)*this)));
+                                                              ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:175:50: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:175:50: note: '{' token is here
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:175:50: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+accessor.cc:175:50: note: ')' token is here
+    return Array(rb_funcall(accessor.enumerator, rb_intern("call"), 1, (VALUE)*this));
+                                                 ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+22 warnings generated.
+compiling array.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from array.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling backref.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from backref.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+backref.cc:12:12: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    _new = rb_intern("new");
+           ^~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+backref.cc:12:12: note: '{' token is here
+    _new = rb_intern("new");
+           ^~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+backref.cc:12:12: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    _new = rb_intern("new");
+           ^~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+backref.cc:12:12: note: ')' token is here
+    _new = rb_intern("new");
+           ^~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+backref.cc:13:14: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    object = rb_intern("object");
+             ^~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+backref.cc:13:14: note: '{' token is here
+    object = rb_intern("object");
+             ^~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+backref.cc:13:14: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    object = rb_intern("object");
+             ^~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+backref.cc:13:14: note: ')' token is here
+    object = rb_intern("object");
+             ^~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+6 warnings generated.
+compiling constants.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from constants.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling constraints.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from constraints.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling context.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from context.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling date.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from date.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling exception.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from exception.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling external.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from external.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling function.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from function.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling gc.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from gc.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling handles.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from handles.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+handles.cc:31:27: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  return rb_funcall(code, rb_intern("call"), 0);
+                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+handles.cc:31:27: note: '{' token is here
+  return rb_funcall(code, rb_intern("call"), 0);
+                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+handles.cc:31:27: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+  return rb_funcall(code, rb_intern("call"), 0);
+                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+handles.cc:31:27: note: ')' token is here
+  return rb_funcall(code, rb_intern("call"), 0);
+                          ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+4 warnings generated.
+compiling heap.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from heap.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling init.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from init.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+init.cc:11:20: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+    v8::Locker lock();
+                   ^~
+init.cc:11:20: note: remove parentheses to declare a variable
+    v8::Locker lock();
+                   ^~
+init.cc:11:16: warning: 'lock' has C-linkage specified, but returns user-defined type 'v8::Locker' which is incompatible with C [-Wreturn-type-c-linkage]
+    v8::Locker lock();
+               ^
+4 warnings generated.
+compiling invocation.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from invocation.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+invocation.cc:56:46: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(invocation.code, rb_intern("call"), 1, Data_Wrap_Struct(Class, 0, 0, (void*)this->args)));
+                                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+invocation.cc:56:46: note: '{' token is here
+    return Value(rb_funcall(invocation.code, rb_intern("call"), 1, Data_Wrap_Struct(Class, 0, 0, (void*)this->args)));
+                                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+invocation.cc:56:46: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return Value(rb_funcall(invocation.code, rb_intern("call"), 1, Data_Wrap_Struct(Class, 0, 0, (void*)this->args)));
+                                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+invocation.cc:56:46: note: ')' token is here
+    return Value(rb_funcall(invocation.code, rb_intern("call"), 1, Data_Wrap_Struct(Class, 0, 0, (void*)this->args)));
+                                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+4 warnings generated.
+compiling locker.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from locker.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+locker.cc:52:30: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+locker.cc:52:30: note: '{' token is here
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+locker.cc:52:30: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+locker.cc:52:30: note: ')' token is here
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+locker.cc:75:30: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+locker.cc:75:30: note: '{' token is here
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+locker.cc:75:30: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+locker.cc:75:30: note: ')' token is here
+     return rb_funcall(code, rb_intern("call"), 0);
+                             ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+6 warnings generated.
+compiling message.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from message.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling object.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from object.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling primitive.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from primitive.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling rr.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from rr.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+rr.cc:8:23: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    rb_funcall(klass, rb_intern("private_class_method"), 1, rb_str_new2("new"));
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+rr.cc:8:23: note: '{' token is here
+    rb_funcall(klass, rb_intern("private_class_method"), 1, rb_str_new2("new"));
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+rr.cc:8:23: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    rb_funcall(klass, rb_intern("private_class_method"), 1, rb_str_new2("new"));
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+rr.cc:8:23: note: ')' token is here
+    rb_funcall(klass, rb_intern("private_class_method"), 1, rb_str_new2("new"));
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+4 warnings generated.
+compiling script.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from script.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+script.cc:82:23: warning: implicit conversion loses integer precision: 'long' to 'useconds_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+  usleep(data->timeout*1000);
+  ~~~~~~ ~~~~~~~~~~~~~^~~~~
+3 warnings generated.
+compiling signature.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from signature.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling stack.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from stack.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling string.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from string.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+string.cc:42:38: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    VALUE string = rb_funcall(value, rb_intern("to_s"), 0);
+                                     ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+string.cc:42:38: note: '{' token is here
+    VALUE string = rb_funcall(value, rb_intern("to_s"), 0);
+                                     ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+string.cc:42:38: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    VALUE string = rb_funcall(value, rb_intern("to_s"), 0);
+                                     ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+string.cc:42:38: note: ')' token is here
+    VALUE string = rb_funcall(value, rb_intern("to_s"), 0);
+                                     ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+4 warnings generated.
+compiling template.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from template.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling trycatch.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from trycatch.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+trycatch.cc:85:29: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return rb_funcall(code, rb_intern("call"), 1, rb_iv_get(code, "_v8_trycatch"));
+                            ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+trycatch.cc:85:29: note: '{' token is here
+    return rb_funcall(code, rb_intern("call"), 1, rb_iv_get(code, "_v8_trycatch"));
+                            ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+trycatch.cc:85:29: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    return rb_funcall(code, rb_intern("call"), 1, rb_iv_get(code, "_v8_trycatch"));
+                            ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+trycatch.cc:85:29: note: ')' token is here
+    return rb_funcall(code, rb_intern("call"), 1, rb_iv_get(code, "_v8_trycatch"));
+                            ^~~~~~~~~~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2602:20: note: expanded from macro 'rb_funcall'
+        rb_funcallv(recv, mid, \
+                          ^~~
+4 warnings generated.
+compiling v8.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from v8.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+compiling value.cc
+clang-13: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from value.cc:1:
+In file included from ./rr.h:5:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby.h:33:
+In file included from /Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/ruby.h:2111:
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/adamnewlaptop/.rubies/ruby-2.6.5/include/ruby-2.6.0/ruby/intern.h:56:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+linking shared-object v8/init.bundle
+
+current directory: /Users/adamnewlaptop/Desktop/rubyrails-tasks/vendor/bundle/ruby/2.6.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 init.bundle ./.gem.20211107-99626-sraoxi/v8
