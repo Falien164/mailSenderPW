@@ -19,7 +19,9 @@ Aplikacja została stworzona przy użyciu framework’u Rails opierającym się 
   - rswag: w celu generowania dokumentacji OpenAPI Swagger, 
   - bcrypt: szyfrowanie haseł użytkowników,
   - jwt: szyfrowanie i odszyfrowywanie JSON Web Token,
-  - simple_command: tworzenie wewnętrznych serwisów aplikacji. Do budowania kontenerów wykorzystany będzie Docker. W celu wysłania maili do użytkowników wykorzystywane będzie zewnętrzne API SendGrid.
+  - simple_command: tworzenie wewnętrznych serwisów aplikacji.
+  - docker: budowanie kontenerów, 
+  - zewnętrzne API SendGrid: Wysyłanie maili do użytkowników
 
 
 ### FRONTEND
