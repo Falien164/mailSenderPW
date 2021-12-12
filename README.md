@@ -44,3 +44,7 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
 
 ### Architektura aplikacji
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/architektura.png" width="400" height="400">
+
+### swagger
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/swagger.png" width="400" height="400">
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/swagger_post.png" width="400" height="400">
