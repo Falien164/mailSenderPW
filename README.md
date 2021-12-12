@@ -44,6 +44,19 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
 ### Architektura aplikacji
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/architektura.png" width="400" height="400">
 
+### Aplikacja
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/api.png" width="800" height="400">
+
+Po zalogowaniu się po lewej stronie znajduje się okno do wyboru zakładek. Są to "Strona główna", "Grupy Mailowe" oraz "Lista klientów". Znajduje się tam również opcja wylogowania się.
+
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/kampains.png" width="800" height="400">
+
+Po kliknięciu na "Grupy Mailowe" wyświetla się okno kampanii mailowych. Znajdują się na niej stworzone kampanie, które można wysłać do klientów, edytować lub usunąć. Na górze po prawej stronie jest ikonka "+" do stworzenia nowej kampanii. Należy wtedy wpisać Nazwa kampanii, jej opis, Tytuł maila oraz zawartość wiadomości. Można też wyszukać kampanie za pomoca opcji "Search".
+
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/mail_send.png" width="800" height="400">
+
+Po kliknięciu na "Lista klientów" wyświetla się lista kampanii reklamowych. Po wybraniu jednej ze stworzonych kampanii wyświetla się lista klientów przypisanych do danej kampanii. Tak samo jak w kampaniach mailowych można stworzyć lub wyszukać klienta danej kampanii. Na zdjęciu dodany jest przykładowy klient, który nazywa się Ola Olacka. Znajdujący się obok niej Check box potwierdza wysłanie maila do tego klienta.  
+
 ### Swagger
 Dokumentacja backendu została zrealizowana z wykorzystaniem Swagger, językiem do opisywania interfejsów API.
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/swagger.png" width="400" height="400">
