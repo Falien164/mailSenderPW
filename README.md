@@ -60,7 +60,7 @@ Po kliknięciu na "Grupy Mailowe" wyświetla się okno kampanii mailowych. Znajd
 
 Po kliknięciu na "Lista klientów" wyświetla się lista kampanii reklamowych. Po wybraniu jednej ze stworzonych kampanii wyświetla się lista klientów przypisanych do danej kampanii. Tak samo jak w kampaniach mailowych można stworzyć lub wyszukać klienta danej kampanii. Na zdjęciu dodany jest przykładowy klient, który nazywa się Ola Olacka. Znajdujący się obok niej Check box potwierdza wysłanie maila do tego klienta.  
 
-<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/failed_send.png" width="700" height="300">
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/failed_send.png" width="500" height="400">
 Z racji, że taki mail nie istnieje, sendgrid zwrócił error.
 
 ### Swagger
