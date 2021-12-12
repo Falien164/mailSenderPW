@@ -2,11 +2,6 @@
 
 Projekt ten składa się z dwóch aplikacji. Pierwsza z nich odpowiada za frontend, a druga za backend aplikacji i łączą się w całość.
 
-# TODO:
-   - screeny z azure
-   - screeny z apki
-   - Jakieś opisy w sekcjach i pod zdjęciami
-
 ### Link do testowego filmu na YouTube
 
 ### Link do aplikacji
@@ -44,6 +39,14 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
 ### Architektura aplikacji
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/architektura.png" width="600" height="400">
 
+### Serwisy wykorzystywane przez front-end
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/front_azure.png" width="600" height="400">
+
+
+### Serwisy wykorzystywane przez back-end
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/back_azure.png" width="600" height="400">
+
+
 ### Aplikacja
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/api.png" width="800" height="400">
 
@@ -56,6 +59,9 @@ Po kliknięciu na "Grupy Mailowe" wyświetla się okno kampanii mailowych. Znajd
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/mail_send.png" width="700" height="300">
 
 Po kliknięciu na "Lista klientów" wyświetla się lista kampanii reklamowych. Po wybraniu jednej ze stworzonych kampanii wyświetla się lista klientów przypisanych do danej kampanii. Tak samo jak w kampaniach mailowych można stworzyć lub wyszukać klienta danej kampanii. Na zdjęciu dodany jest przykładowy klient, który nazywa się Ola Olacka. Znajdujący się obok niej Check box potwierdza wysłanie maila do tego klienta.  
+
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/failed_send.png" width="700" height="300">
+Z racji, że taki mail nie istnieje, sendgrid zwrócił error.
 
 ### Swagger
 Dokumentacja backendu została zrealizowana z wykorzystaniem Swagger, językiem do opisywania interfejsów API.
