@@ -5,7 +5,6 @@ Projekt ten składa się z dwóch aplikacji. Pierwsza z nich odpowiada za fronte
 # TODO:
    - screeny z azure
    - screeny z apki
-   - screen jakiś z swaggera
    - Jakieś opisy w sekcjach i pod zdjęciami
 
 ### Link do testowego filmu na YouTube
@@ -45,6 +44,7 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
 ### Architektura aplikacji
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/architektura.png" width="400" height="400">
 
-### swagger
+### Swagger
+Dokumentacja backendu została zrealizowana z wykorzystaniem Swagger, językiem do opisywania interfejsów API.
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/swagger.png" width="400" height="400">
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/swagger_post.png" width="400" height="400">
