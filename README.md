@@ -37,10 +37,10 @@ Aplikacja powstała na Azure App Service, uruchamiana z Container Registry i upd
 <img src="https://github.com/Falien164/mailSenderPW/blob/main/images/diagram_przypadkow.png" width="400" height="400">
 
 ### Architektura aplikacji
-<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/architektura.png" width="600" height="400">
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/architektura.png" width="600" height="200">
 
 ### Serwisy wykorzystywane przez front-end
-<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/front_azure.png" width="600" height="400">
+<img src="https://github.com/Falien164/mailSenderPW/blob/main/images/front_azure.png" width="600" height="200">
 
 
 ### Serwisy wykorzystywane przez back-end
