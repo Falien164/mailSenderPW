@@ -11,8 +11,10 @@ Projekt ten składa się z dwóch aplikacji. Pierwsza z nich odpowiada za fronte
 ### Link do testowego filmu na YouTube
 
 ### Link do aplikacji
+https://mailsenderpw.azurewebsites.net/
 
 ### link do swaggera
+https://cloud-service-backend.azurewebsites.net/api-docs
 
 ### BACKEND 
 ###### Komponenty: 
