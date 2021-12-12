@@ -4,6 +4,8 @@ Projekt ten składa się z dwóch aplikacji. Pierwsza z nich odpowiada za fronte
 
 ### Link do testowego filmu na YouTube
 
+https://www.youtube.com/watch?v=KNqJWTKcocc
+
 ### Link do aplikacji
 https://mailsenderpw.azurewebsites.net/
 
